@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-		<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<!-- jqueryUI -->
+	<link rel="stylesheet" href="assets/UI/jquery-ui.min.css">
+	<!-- Main -->
+	<link rel="stylesheet" href="css/style.css">
     <title>Hello, world!</title>
   </head>
   <body>
@@ -36,13 +39,44 @@
 				</div>
 			</div>
 		</nav>
-
-    </header>
+		<div class="hero">
+			<div class="container-xl" id="banner">
+				<img src="img/cat.png" alt="" width="100%">
+				<div id="banner_title">
+					<span>Санкт-Петербург</span>
+					<h1>Котейка</h1>
+					<p>Уютная гостиница для котов и кошек</p>
+					<div class="draggable"><button>Забронировать</button></div>
+				</div>
+			</div>
+			<!-- /#banner.container-xl -->
+		</div>
+		<!-- /.hero -->
+	</header>	
+	<main>
+		<section>
+			<div class="container-xl">
+				<h1>Где нас найти</h1>
+				<div class="map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1353.7884996864711!2d29.14453989750763!3d47.26397422518609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c9594d6f67c47b%3A0x318e049c73ec7b88!2z0JTQtdGC0YHQutC40Lkg0L7Qt9C00L7RgNC-0LLQuNGC0LXQu9GM0L3Ri9C5INC70LDQs9C10YDRjCDQlNC90LXRgdGC0YDQvtCy0YHQutC40Lkg0YHQsNC0LCBEdWLEg3NhcmksINCc0L7Qu9C00LDQstC40Y8!5e0!3m2!1sru!2sru!4v1581711527075!5m2!1sru!2sru" width="100%" height="750" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+				</div>
+				<!-- /.map -->
+			</div>
+			<!-- /.container-xl -->
+		</section>
+	</main>
+		
 
     <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<!-- Jquery -->
+    <script src="assets/jquery-3.4.1.min.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<!-- jQuery ui -->
+    <script src="assets/UI/jquery-ui.min.js" defer></script>
+    <!-- Main -->
+    <script src="js/main.js" defer></script>
   </body>
 </html>

@@ -10,4 +10,30 @@
   color: #000;
   font-weight: bold;
 }
+
+#banner {
+  position: relative;
+  padding: 0 !important;
+}
+
+#banner > * {
+  font-size: 100%;
+}
+
+#banner img {
+  min-height: 190px;
+}
+
+#banner_title {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+@media (min-width: 768px) {
+  #banner_title {
+    top: 30%;
+    left: 20%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
