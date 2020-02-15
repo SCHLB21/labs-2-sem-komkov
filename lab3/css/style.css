@@ -6,8 +6,8 @@
   padding: 0;
 }
 
-#nav-link {
-  color: #000;
+.nav-link_ {
+  color: #000 !important;
   font-weight: bold;
 }
 
@@ -21,6 +21,7 @@
 }
 
 #banner img {
+  width: 100%;
   min-height: 190px;
 }
 
