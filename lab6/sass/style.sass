@@ -1,0 +1,80 @@
+*
+    box-sizing: border-box
+html, body
+    margin: 0
+    height: 100%    
+@keyframes moon 
+    from
+        transform: translate(0,0)
+        // transform: translateY(0)
+    to 
+        transform: translate(100%,-100%)
+        // transform: translateY(100%)
+@keyframes lines 
+    from 
+        transform: translateX(10px)
+    to 
+        transform: translateX(-10px)
+@keyframes wheels
+    from
+        transform: rotate(0)
+    100%
+        transform: rotate(360deg)
+.sky 
+    position: relative
+    width: 100%
+    height: 40%
+    background-color: #084f93
+.ground
+    position: relative
+    width: 100%
+    height: 30%
+    background-color: #3E8B48
+.moon
+    position: absolute
+    height: 350px
+    left: 35%
+    animation: 45s moon infinite
+.star 
+    position: absolute
+    height: 50px
+    transition: 15s
+    &:hover 
+        opacity: 0
+        transition: 5s
+    &-1
+        top: 10%
+        right: 10%
+
+// дорога
+.road 
+    height: 30%
+    border-top: 11px solid #6A686A
+    background-color: #3B3A3B
+    overflow: hidden
+.line 
+    overflow: hidden
+    position: relative
+    width: 100%
+    top: 50%
+    border: 10px dashed #fff
+    animation: 0.2s lines infinite
+// машина
+.auto 
+    position: absolute
+    bottom: 19%
+    z-index: 999
+    height: 14%
+.wheel
+    &-1,&-2
+        position: absolute
+        height: 9%
+        animation: 1.5s wheels infinite
+        animation-delay: 0s
+        animation-timing-function: linear
+    &-1
+        bottom: 16.6%
+        left: 3.5%
+    &-2
+        bottom: 16.6%
+        left: 19.6%

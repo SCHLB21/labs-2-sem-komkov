@@ -1,0 +1,161 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+@-webkit-keyframes moon {
+  from {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  to {
+    -webkit-transform: translate(100%, -100%);
+            transform: translate(100%, -100%);
+  }
+}
+
+@keyframes moon {
+  from {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  to {
+    -webkit-transform: translate(100%, -100%);
+            transform: translate(100%, -100%);
+  }
+}
+
+@-webkit-keyframes lines {
+  from {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  to {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+}
+
+@keyframes lines {
+  from {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  to {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+}
+
+@-webkit-keyframes wheels {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes wheels {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.sky {
+  position: relative;
+  width: 100%;
+  height: 40%;
+  background-color: #084f93;
+}
+
+.ground {
+  position: relative;
+  width: 100%;
+  height: 30%;
+  background-color: #3E8B48;
+}
+
+.moon {
+  position: absolute;
+  height: 350px;
+  left: 35%;
+  -webkit-animation: 45s moon infinite;
+          animation: 45s moon infinite;
+}
+
+.star {
+  position: absolute;
+  height: 50px;
+  -webkit-transition: 15s;
+  transition: 15s;
+}
+
+.star:hover {
+  opacity: 0;
+  -webkit-transition: 5s;
+  transition: 5s;
+}
+
+.star-1 {
+  top: 10%;
+  right: 10%;
+}
+
+.road {
+  height: 30%;
+  border-top: 11px solid #6A686A;
+  background-color: #3B3A3B;
+  overflow: hidden;
+}
+
+.line {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  top: 50%;
+  border: 10px dashed #fff;
+  -webkit-animation: 0.2s lines infinite;
+          animation: 0.2s lines infinite;
+}
+
+.auto {
+  position: absolute;
+  bottom: 19%;
+  z-index: 999;
+  height: 14%;
+}
+
+.wheel-1, .wheel-2 {
+  position: absolute;
+  height: 9%;
+  -webkit-animation: 1.5s wheels infinite;
+          animation: 1.5s wheels infinite;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.wheel-1 {
+  bottom: 16.6%;
+  left: 3.5%;
+}
+
+.wheel-2 {
+  bottom: 16.6%;
+  left: 19.6%;
+}
+/*# sourceMappingURL=style.css.map */
