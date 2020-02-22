@@ -20,16 +20,45 @@ html, body
         transform: rotate(0)
     100%
         transform: rotate(360deg)
-.sky 
-    position: relative
-    width: 100%
-    height: 40%
-    background-color: #084f93
+@keyframes auto 
+    from 
+        bottom: 19%
+    to 
+        bottom: 19.1%
+@keyframes clouds 
+    from 
+        transform: translateX(100vw)
+    to 
+        transform: translateX(-100%)
+@keyframes trees
+    from 
+        transform: translateX(100vw)
+        opacity: 1
+    to 
+        transform: translateX(-100%)
+        opacity: 1
+        
+
+// Земля
 .ground
     position: relative
     width: 100%
     height: 30%
     background-color: #3E8B48
+.tree
+    position: relative
+    height: 100%
+    animation: 8s trees 
+    bottom: 10%
+    animation-timing-function: linear
+    opacity: 0
+// Небо
+.sky 
+    position: relative
+    width: 100%
+    height: 40%
+    background-color: #084f93
+    overflow: hidden
 .moon
     position: absolute
     height: 350px
@@ -45,7 +74,25 @@ html, body
     &-1
         top: 10%
         right: 10%
-
+    &-2 
+        top: 20%
+        left: 30%
+    &-3 
+        top: 60%
+        left: 60%
+.cloud
+    position: absolute
+    top: 5%
+    height: 70%
+    z-index: 1000
+    animation: 60s clouds infinite
+.night
+    position: relative
+    bottom: -20%
+    z-index: 0
+    height: 80%
+    animation: 100s clouds infinite
+    animation-timing-function: linear
 // дорога
 .road 
     height: 30%
@@ -59,22 +106,32 @@ html, body
     top: 50%
     border: 10px dashed #fff
     animation: 0.2s lines infinite
+    box-shadow: -5px 9px 35px black
 // машина
+// .car 
+//     position: absolute
+//     z-index: 999
+//     height: 100%
 .auto 
     position: absolute
     bottom: 19%
     z-index: 999
-    height: 14%
+    // width: 25.5%
+    height: 136px
+    animation: 0.9s auto infinite
 .wheel
     &-1,&-2
         position: absolute
         height: 9%
+        height: 87.7px
         animation: 1.5s wheels infinite
         animation-delay: 0s
         animation-timing-function: linear
     &-1
         bottom: 16.6%
-        left: 3.5%
+        // left: 3.5%
+        left: 67.5px
     &-2
         bottom: 16.6%
-        left: 19.6%
+        left: 379px
+        // left: 18.7%

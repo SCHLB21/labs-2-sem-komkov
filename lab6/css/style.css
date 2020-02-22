@@ -74,11 +74,70 @@ html, body {
   }
 }
 
-.sky {
-  position: relative;
-  width: 100%;
-  height: 40%;
-  background-color: #084f93;
+@-webkit-keyframes auto {
+  from {
+    bottom: 19%;
+  }
+  to {
+    bottom: 19.1%;
+  }
+}
+
+@keyframes auto {
+  from {
+    bottom: 19%;
+  }
+  to {
+    bottom: 19.1%;
+  }
+}
+
+@-webkit-keyframes clouds {
+  from {
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes clouds {
+  from {
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@-webkit-keyframes trees {
+  from {
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    opacity: 1;
+  }
+}
+
+@keyframes trees {
+  from {
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    opacity: 1;
+  }
 }
 
 .ground {
@@ -86,6 +145,25 @@ html, body {
   width: 100%;
   height: 30%;
   background-color: #3E8B48;
+}
+
+.tree {
+  position: relative;
+  height: 100%;
+  -webkit-animation: 8s trees;
+          animation: 8s trees;
+  bottom: 10%;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  opacity: 0;
+}
+
+.sky {
+  position: relative;
+  width: 100%;
+  height: 40%;
+  background-color: #084f93;
+  overflow: hidden;
 }
 
 .moon {
@@ -114,6 +192,36 @@ html, body {
   right: 10%;
 }
 
+.star-2 {
+  top: 20%;
+  left: 30%;
+}
+
+.star-3 {
+  top: 60%;
+  left: 60%;
+}
+
+.cloud {
+  position: absolute;
+  top: 5%;
+  height: 70%;
+  z-index: 1000;
+  -webkit-animation: 60s clouds infinite;
+          animation: 60s clouds infinite;
+}
+
+.night {
+  position: relative;
+  bottom: -20%;
+  z-index: 0;
+  height: 80%;
+  -webkit-animation: 100s clouds infinite;
+          animation: 100s clouds infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
 .road {
   height: 30%;
   border-top: 11px solid #6A686A;
@@ -129,18 +237,23 @@ html, body {
   border: 10px dashed #fff;
   -webkit-animation: 0.2s lines infinite;
           animation: 0.2s lines infinite;
+  -webkit-box-shadow: -5px 9px 35px black;
+          box-shadow: -5px 9px 35px black;
 }
 
 .auto {
   position: absolute;
   bottom: 19%;
   z-index: 999;
-  height: 14%;
+  height: 136px;
+  -webkit-animation: 0.9s auto infinite;
+          animation: 0.9s auto infinite;
 }
 
 .wheel-1, .wheel-2 {
   position: absolute;
   height: 9%;
+  height: 87.7px;
   -webkit-animation: 1.5s wheels infinite;
           animation: 1.5s wheels infinite;
   -webkit-animation-delay: 0s;
@@ -151,11 +264,11 @@ html, body {
 
 .wheel-1 {
   bottom: 16.6%;
-  left: 3.5%;
+  left: 67.5px;
 }
 
 .wheel-2 {
   bottom: 16.6%;
-  left: 19.6%;
+  left: 379px;
 }
 /*# sourceMappingURL=style.css.map */
