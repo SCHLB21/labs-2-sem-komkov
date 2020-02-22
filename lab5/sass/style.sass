@@ -33,3 +33,16 @@
 iframe 
     width: 100%
     frameborder: 0
+
+// Стили для печати
+@media print
+    @page :first
+        margin: 1cm
+    @page :left 
+        margin: 1cm 3cm 1cm 1.5cm
+    #banner 
+        height: 200px
+        margin-bottom: 10px
+        img 
+            display: none 
+        

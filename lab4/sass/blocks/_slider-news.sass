@@ -1,0 +1,67 @@
+.slider-news
+    width: 1366px
+    margin: 0 auto
+    outline: none
+    margin-top: 48px
+.slide 
+    outline: none
+    position: relative
+    &__information
+        width: 1366px
+        height: 400px
+        margin: 0 auto
+        text-align: center
+        p 
+            padding-top: 150px
+            margin: 0
+            color: #fff
+        span 
+            color: #fff
+        a 
+            outline: none 
+            text-decoration: none
+            color: #fff
+            h3 
+                display: inline-block
+                margin-top: 29px
+                margin-bottom: 8px
+            
+// Buttons
+.slick 
+    &-next 
+        right: 116px
+        font-size: 36px
+        color: #fff
+        z-index: 1000
+        top: 196px
+        letter-spacing: 7.2px
+        &:hover 
+            color: #fff
+        &:before 
+            content: none
+        &:focus
+            color: #fff
+    &-prev 
+        left: 116px
+        font-size: 36px
+        color: #fff
+        z-index: 1000
+        letter-spacing: 7.2px
+        top: 196px
+        &:hover 
+            color: #fff
+        &:before 
+            content: none
+        &:focus
+            color: #fff
+.slick-dots 
+    position: absolute
+    bottom: 53px
+    li button:before
+        color: #999999
+        opacity: 1 
+        &:hover 
+            color: #fff
+.slick-dots li.slick-active button:before
+    color: #fff
+    opacity: 1
