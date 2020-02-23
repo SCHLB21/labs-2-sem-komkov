@@ -1,3 +1,5 @@
+.menu-button 
+    display: none
 @media (max-width: 1300px)
     // nav, .hero 
     .container 
@@ -80,15 +82,29 @@
         &-wrap
             flex-direction: column
             justify-content: flex-start
+            margin-left: 10px
         &__logo 
             margin-top: -22px
         &__menu
             flex-direction: column
+            display: none
+        &-active
+            display: flex
         &__tools 
             align-self: flex-end 
             order: -10
     .signup 
         margin-right: 5px!important
+    .menu-button 
+        display: block
+        font-size: 35px
+        // margin-top: -25px
+        width: 35px
+        color: #fff
+    .m-element
+        padding: 5px 0
+        a 
+            font-size: 20px
 @media (max-width: 590px)
     .brands    
         img 

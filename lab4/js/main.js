@@ -10,5 +10,10 @@ jQuery(document).ready(function(){
 		prevArrow:"<button type='button' class='slick-prev'><i class='icon ion-ios-arrow-back slide-prev'></i></button>",
 		nextArrow:"<button type='button' class='slick-next'><i class='icon ion-ios-arrow-forward slide-next'></i></button>" ,
 	});
+	$('.menu-button').click(function(){
+		$('.navbar__menu').toggleClass('navbar-active');
+	});
+	
+	
 });
 

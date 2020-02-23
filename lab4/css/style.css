@@ -1045,6 +1045,10 @@ footer {
   margin-right: 7px;
 }
 
+.menu-button {
+  display: none;
+}
+
 @media (max-width: 1300px) {
   .container {
     width: 996px;
@@ -1173,6 +1177,7 @@ footer {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    margin-left: 10px;
   }
   .navbar__logo {
     margin-top: -22px;
@@ -1182,6 +1187,12 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    display: none;
+  }
+  .navbar-active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .navbar__tools {
     -ms-flex-item-align: end;
@@ -1192,6 +1203,18 @@ footer {
   }
   .signup {
     margin-right: 5px !important;
+  }
+  .menu-button {
+    display: block;
+    font-size: 35px;
+    width: 35px;
+    color: #fff;
+  }
+  .m-element {
+    padding: 5px 0;
+  }
+  .m-element a {
+    font-size: 20px;
   }
 }
 
