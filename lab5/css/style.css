@@ -63,5 +63,12 @@ iframe {
   #banner img {
     display: none;
   }
+  #banner_title {
+    top: 0;
+    left: 0;
+  }
+  .draggable {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
