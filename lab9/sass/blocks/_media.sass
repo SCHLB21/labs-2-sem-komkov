@@ -1,0 +1,128 @@
+.menu-button 
+    display: none
+@media (max-width: 1300px)
+    // nav, .hero 
+    .container 
+        width: 996px
+    .container-content
+        width: 100%
+        margin: 0 auto
+    .company-features
+        .container
+            width: 100%
+            margin: 0 auto
+    .feature__support
+        padding-right: 5px!important
+    .features-wrap
+        // flex-direction: column
+    // товары 
+    .new-offer
+        order: 999
+        margin: 0 auto
+        margin-top: 30px
+    // бренды
+    .brands
+        width: 100%
+    // слайдер
+    .slider-news, .slide__information
+        width: 1000px
+    // блог
+    .sell-out__banner
+        display: none
+    .blog
+        &-preview__content
+            padding: 50px 10px
+        &-wrap
+            justify-content: center
+
+@media (max-width: 1000px)
+    .container
+        width: 100%
+    .features-wrap
+        flex-direction: column
+    .feature 
+        padding-left: 45%
+        border-right: none
+        border-bottom: 1px solid #d3d3d3
+        align-items: baseline 
+        @media (max-width: 567px)
+            padding-left: 57px
+        &__shipping
+            margin-left: 0
+    // продукт баннер
+    .products__banner
+        margin: 0 auto
+        &-right
+            display: none
+    // слайдер
+    .slider-news, .slide__information
+        display: none
+    // BLOG 
+    .blog-preview
+        width: 100%
+        height: 100%
+    .blog-preview__content
+        flex-wrap: wrap
+    .first-page
+        @media (max-width: 952px)
+            margin-right: 0
+        @media (max-width: 922px)
+            margin: 0 auto
+    .second-pages
+        @media (max-width: 922px)
+            display: none
+    // brand
+    .brands 
+        img 
+            display: none
+            &:nth-of-type(-n+2)
+                display: flex
+@media (max-width: 952px)
+    .navbar
+        &-wrap
+            flex-direction: column
+            justify-content: flex-start
+            margin-left: 10px
+        &__logo 
+            margin-top: -22px
+        &__menu
+            flex-direction: column
+            display: none
+        &-active
+            display: flex
+        &__tools 
+            align-self: flex-end 
+            order: -10
+    .signup 
+        margin-right: 5px!important
+    .menu-button 
+        display: block
+        font-size: 35px
+        // margin-top: -25px
+        width: 35px
+        color: #fff
+    .m-element
+        padding: 5px 0
+        a 
+            font-size: 20px
+@media (max-width: 590px)
+    .brands    
+        img 
+            display: none!important
+            &:first-of-type
+                display: flex!important
+                margin-right: 0
+    // footer
+    .footer-wrap
+        flex-direction: column
+        width: 300px
+        margin: 0 auto
+    .roadmap
+        display: none
+@media (max-width: 616px)
+    .offer
+        margin: 0 auto
+        margin-top: 30px
+        display: none
+        &:nth-child(-n+4)
+            display: block
