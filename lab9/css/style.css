@@ -347,10 +347,10 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -467,7 +467,7 @@ main {
 }
 
 .feature small {
-  color: #999999;
+  color: #000;
 }
 
 .feature__shipping {
@@ -587,7 +587,7 @@ main {
 
 .old-price {
   text-decoration: line-through;
-  color: #999999;
+  color: #000;
 }
 
 .new-price {
@@ -926,7 +926,7 @@ main {
 }
 
 .support-page a span {
-  color: #999999;
+  color: #000;
 }
 
 .support-page__wrap {
@@ -973,18 +973,18 @@ main {
 }
 
 footer {
-  background-color: #363637;
+  background-color: #000;
   padding-top: 38px;
 }
 
 .social-networks {
-  margin-top: 57px;
+  margin-top: 10px;
   width: 145px;
 }
 
 .social-networks a {
   text-decoration: none;
-  color: #999999;
+  color: #fff;
 }
 
 .social-networks a:hover {
@@ -1004,13 +1004,13 @@ footer {
   margin-bottom: 43px;
 }
 
-.subscribe legend {
+.subscribe label {
   color: #fff;
   margin-bottom: 25.6px;
 }
 
 .subscribe input {
-  color: #8e8e8e;
+  color: #000;
   outline: none;
   border: none;
   height: 40px;
@@ -1507,9 +1507,10 @@ footer {
 }
 
 .social-networks {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 30px;
+  font-family: 'Montserrat Semibold', sans-serif;
 }
 
 .footer-navbar {
@@ -1520,7 +1521,7 @@ footer {
   letter-spacing: 0.9px;
 }
 
-.subscribe legend {
+.subscribe label {
   font-family: 'Montserrat Semibold', sans-serif;
   font-size: 12px;
   font-weight: 400;
