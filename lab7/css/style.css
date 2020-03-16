@@ -201,6 +201,19 @@ body {
   grid-area: promo-i;
 }
 
+.footer__roadmap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 header {
   height: 100vh;
   background-image: url("../img/hero.png");
@@ -398,6 +411,32 @@ main {
   height: 410px;
 }
 
+.footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: #3b181e;
+}
+
+.footer__social-networks {
+  text-align: center;
+  padding-bottom: 29px;
+}
+
+.footer__social-networks a {
+  margin-right: 50px;
+}
+
+.footer__roadmap {
+  width: 994px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+
+.footer__roadmap-element a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+
 @font-face {
   font-family: 'Forum';
   src: url("../fonts/Forum.eot");
@@ -506,5 +545,10 @@ main {
   font-weight: 400;
   letter-spacing: 1.65px;
   text-transform: uppercase;
+}
+
+.footer__roadmap-element a {
+  font-size: 16px;
+  font-weight: 400;
 }
 /*# sourceMappingURL=style.css.map */
