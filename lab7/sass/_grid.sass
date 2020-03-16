@@ -1,0 +1,25 @@
+.container 
+    width: 91%
+    margin: 0 auto
+    display: grid
+    grid-template-columns: auto 818px auto
+    grid-template-rows: 135px 90% 35%
+    grid-template-areas: "header_logo . menu" ". hero ." "social-networks . catalog" 
+    align-items: end
+.header
+    &__logo 
+        grid-area: header_logo
+    &__menu
+        justify-self: end
+        grid-area: menu
+    &__social-networks
+        grid-area: social-networks
+        align-self: center
+    &__hero
+        grid-area: hero
+        justify-self: center
+        letter-spacing: 10.8px
+    &__catalog 
+        justify-self: end
+        grid-area: catalog
+        align-self: start
