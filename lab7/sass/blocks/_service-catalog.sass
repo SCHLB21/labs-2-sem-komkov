@@ -1,0 +1,71 @@
+main 
+    background-color: #3b181e
+.service-catalog
+    position: relative
+    margin-bottom: 170px
+    &__bg
+        color: #fff
+        position: absolute
+        text-align: center
+        left: 18.8%
+        top: 200px
+        z-index: 0
+    h2 
+        color: #fff
+        margin-top: 187px
+        margin-bottom: 120px
+        position: relative
+        z-index: 1
+        &:before
+            text-align: center
+            content: ''
+            display: block
+            position: absolute
+            left: 30%
+            height: 2px
+            background-color: #fff
+            width: 38%
+            transform: translateY(50px)
+            
+    &__card 
+        z-index: 1
+        width: 330px
+        height: 450px
+        color: #fff
+        padding-left: 20px
+        padding-bottom: 20px
+        padding-top: 36px
+        span 
+            position: relative
+            &:after
+                content: ''
+                display: block
+                position: absolute
+                left: 31px
+                height: 2px
+                width: 70px
+                transform: translateY(-8px)
+                background-color: #fff
+
+        h3 
+            margin: 0
+        button 
+            color: #010001
+            background-color: #ffffff
+            width: 199px
+            height: 50px
+            border: none
+            display: none
+        &:hover 
+            button 
+                opacity: 1!important
+                display: block
+                
+        &-1
+            background-image: url('../img/catalog/1.png')
+        &-2
+            background-image: url('../img/catalog/2.png')
+        &-3
+            background-image: url('../img/catalog/3.png')
+        &-4
+            background-image: url('../img/catalog/4.png')

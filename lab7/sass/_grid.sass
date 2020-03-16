@@ -1,3 +1,6 @@
+body 
+    display: flex
+    flex-direction: column
 .container 
     width: 91%
     margin: 0 auto
@@ -23,3 +26,55 @@
         justify-self: end
         grid-area: catalog
         align-self: start
+.service-catalog
+    width: 1500px
+    margin: 0 auto
+    display: grid
+    grid-template-columns: auto auto auto auto
+    grid-template-rows: auto auto
+    column-gap: 60px
+    grid-template-areas: ". cathead cathead ." "bouquet triumph compos decor"
+    h2 
+        grid-area: cathead
+        justify-self: center
+    &__card
+        display: grid
+        grid-template-rows: auto auto 100px
+        grid-template-areas: "card-s" "card-h" "card-h"
+        &:hover 
+            grid-template-areas: "card-s" "card-h" "card-b"
+        span 
+            grid-area: card-s
+        h3 
+            align-self: end
+            grid-area: card-h
+        button 
+            align-self: end
+            grid-area: card-b
+        &-1
+            grid-area: bouquet 
+        &-2
+            grid-area: triumph
+        &-3
+            grid-area: compos
+        &-4
+            grid-area: decor
+
+.promotional_offers
+    display: grid
+    grid-template-columns: 354px 697px
+    column-gap: 343px
+    grid-template-rows: 181px auto 110px
+    justify-content: center
+    grid-template-areas: "promo-h promo-i" "promo-p promo-i" "promo-b promo-i"
+    h2 
+        grid-area: promo-h
+        margin-bottom: 0
+        align-self: center
+    p 
+        grid-area: promo-p
+        align-self: center
+    button 
+        grid-area: promo-b
+    img 
+        grid-area: promo-i
