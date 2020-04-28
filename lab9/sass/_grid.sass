@@ -1,9 +1,13 @@
+$cont-width: ("main": 1170px)
+%cont-width 
+    width: 1282px
 .container
     margin: 0 auto
-    width: 1170px
+    width: map-get($cont-width, "main")
 .container-content
     margin: 0 auto
-    width: 1282px
+    @extend %cont-width 
+
 // Header
 .navbar-wrap
     display: flex

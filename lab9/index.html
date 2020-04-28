@@ -16,12 +16,12 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="container">
-                <div class="navbar-wrap">
+            <div class="container" role="grid">
+                <div class="navbar-wrap" role="grid">
                     <div class="navbar__logo"><img src="img/logo.png" alt=""></div>
                     <!-- /.navbar__logo -->
-                    <div class="menu-button"><i class="icon ion-md-menu"></i></div>
-                    <div class="navbar__menu">
+                    <div class="menu-button" role="button"><i class="icon ion-md-menu"></i></div>
+                    <div class="navbar__menu" role="list">
                         <div class="m-element"><a href="#">home</a><i class="icon ion-ios-arrow-down"></i></div>
                         <div class="m-element"><a href="#">shop</a></div>
                         <div class="m-element"><a href="#">portfolio</a></div>
@@ -36,7 +36,7 @@
                         <div class="navbar__widget navbar__cart">
                             <img src="img/Cart.png" alt="">
                         </div>
-                        <div class="navbar__widget navbar__search">
+                        <div class="navbar__widget navbar__search" role="search">
                             <img src="img/Search.png" alt="">
                         </div>
                     </div>
@@ -47,16 +47,16 @@
             <!-- /.container -->
         </nav>
         <!-- /.navbar -->
-        <div class="hero">
-            <div class="container">
-                <div class="hero-wrap">
+        <div class="hero" role="banner">
+            <div class="container" role="grid">
+                <div class="hero-wrap" role="grid">
                     <div class="hero__arrows left-arrow">
                         <i class="icon ion-ios-arrow-round-back"></i>
                     </div>
                     <!-- /.left-arrow -->
                     <div class="hero-title">
                         <div class="hero__headline"><h1>New Arrival</h1></div>
-                        <button class="button hero_button">Buy Now</button>
+                        <button class="button hero_button" role="button">Buy Now</button>
                     </div>
                     <!-- /.hero-title -->
                     <div class="hero__arrows right-arrow">
@@ -70,11 +70,11 @@
         </div>
         <!-- /.hero -->
     </header>   
-    <main>
-        <div class="container-content">
+    <main role="main">
+        <div class="container-content" role="grid">
             <section class="company-features">
-                <div class="container">
-                    <div class="features-wrap">
+                <div class="container" role="grid">
+                    <div class="features-wrap" role="grid">
                         <div class="feature feature__shipping"><span>Free Shipping</span><small>Oders over $99</small></div>
                         <div class="feature feature__return"><span>30 days return</span><small>If goods have problem</small></div>
                         <div class="feature feature__payment"><span>Secure payment</span><small>100% secure payment</small></div>
@@ -84,14 +84,14 @@
             </section>
             <!-- /.company-features -->
             <section class="popular-offers">
-                <div class="offers-wrap">
-                    <article class="offer more-offers">
+                <div class="offers-wrap" role="grid">
+                    <article class="offer more-offers" role="article">
                         <img src="img/articles/.png" alt="">
                         <p>Popular Product</p>
                         <a href="#"><span>More Product</span><i class="ion-md-arrow-round-forward"></i></a>
                     </article>
                     <!-- More Product  -->
-                    <article class="offer sell-out">
+                    <article class="offer sell-out" role="article">
                         <a href="#">
                             <img src="img/articles/1.png" alt="">
                             <p>Essential cotton-blend</p>
@@ -101,7 +101,7 @@
                         </a>
                     </article>
                     <!-- карточка товара -->
-                    <article class="offer">
+                    <article class="offer" role="article">
                         <a href="#">
                             <img src="img/articles/2.png" alt="">
                             <p>Flecked cotton-blend</p>
@@ -109,7 +109,7 @@
                         </a>
                     </article>
                     <!--карточка товара -->
-                    <article class="offer">
+                    <article class="offer" role="article">
                         <a href="#">
                             <img src="img/articles/3.png" alt="">
                             <p>Striped cotton t-shirt</p>
@@ -117,7 +117,7 @@
                         </a>
                     </article>
                     <!--карточка товара -->
-                    <article class="offer">
+                    <article class="offer" role="article">
                         <a href="#">
                             <img src="img/articles/4.png" alt="">
                             <p>V-neck cotton t-shirt</p>
@@ -125,13 +125,13 @@
                         </a>
                     </article>
                     <!--карточка товара -->
-                    <article class="offer new-offer">
+                    <article class="offer new-offer" role="article">
                         <p>lifestyle</p>
                         <h3>New Now: Striped cotton</h3>
-                        <button><span>$50.00 USD</span> | <span>By now</span></button>
+                        <button role="button"><span>$50.00 USD</span> | <span>By now</span></button>
                     </article>
                     <!-- товарный баннер -->
-                    <article class="offer">
+                    <article class="offer" role="article">
                         <a href="#">
                             <img src="img/articles/6.png" alt="">
                             <p>Message cotton t-shirt</p>
@@ -139,7 +139,7 @@
                         </a>
                     </article>
                     <!--карточка товара -->
-                    <article class="offer sell-out">
+                    <article class="offer sell-out" role="article">
                         <a href="#">
                             <img src="img/articles/7.png" alt="">
                             <p>Sequin star t-shirt</p>
@@ -149,7 +149,7 @@
                         </a>
                     </article>
                     <!--карточка товара -->
-                    <article class="offer">
+                    <article class="offer" role="article">
                         <a href="#">
                             <img src="img/articles/8.png" alt="">
                             <p>Ruffle sleeve t-shirt</p>
@@ -157,7 +157,7 @@
                         </a>
                     </article>
                     <!--карточка товара -->
-                    <article class="offer">
+                    <article class="offer" role="article">
                         <a href="#">
                             <img src="img/articles/9.png" alt="">
                             <p>Double layer top</p>
@@ -167,7 +167,7 @@
                     <!--карточка товара -->
                 </div>
                 <!-- offers-wrap -->
-                <button class="load-more"><i class="fas fa-sync-alt"></i><span>load more</span></button>
+                <button class="load-more" role="button"><i class="fas fa-sync-alt"></i><span>load more</span></button>
             </section>
             <!-- /.popular-offer -->
         </div>
@@ -208,8 +208,8 @@
             <!-- /.slide -->
         </section>
         <!-- /.slider-news -->
-        <div class="container-content">
-            <section class="products products-wrap">
+        <div class="container-content" role="grid">
+            <section class="products products-wrap" role="grid">
                 <div class="products__banner products__banner-left">
                     <p>Suits</p>
                     <a href="#">
@@ -228,27 +228,27 @@
                 <!-- /.products__banner -->
             </section>
             <!-- /.products pruducts-wrap -->
-            <section class="blog blog-wrap">
+            <section class="blog blog-wrap" role="grid">
                 <div class="sell-out__banner">
                     <p>Number of Day</p>
                     <a href="#">
                         <h1>197</h1>
                         <h3>Combo Sale Off<br>Up To 50%</h3>
                     </a>
-                    <button class="read-more">Read More</button>
+                    <button class="read-more" role="button">Read More</button>
                 </div>
                 <!-- /.sell-out__banner -->
                 <section class="blog-preview">
                     <div class="blog-preview__headline">
                         <h3>popular</h3>
                         <div class="headline-arrows">
-                            <button class="headline-arrow"><i class="icon ion-ios-arrow-back"></i></button>
-                            <button class="headline-arrow"><i class="icon ion-ios-arrow-forward"></i></button>
+                            <button class="headline-arrow" role="button"><i class="icon ion-ios-arrow-back"></i></button>
+                            <button class="headline-arrow" role="button"><i class="icon ion-ios-arrow-forward"></i></button>
                         </div>
                     </div>
                     <!-- /.blog-preview__headline -->
                     <section class="blog-preview__content">
-                        <article class="first-page preview-page">
+                        <article class="first-page preview-page" role="article">
                             <span><i class="far fa-clock"></i>Date: April 05, 2017</span>
                             <a href="#">
                                 <h3>The best Summer style<br>from Milan Fashion Week</h3>
@@ -259,9 +259,9 @@
                         </article>
                         <!-- /.first-page -->
                         <section class="second-pages">
-                            <article class="support-page preview-page">
+                            <article class="support-page preview-page" role="article">
                                 <img src="img/blog/2.png" alt="">
-                                <div class="support-page__wrap">
+                                <div class="support-page__wrap" role="grid">
                                     <span><i class="far fa-clock"></i>Date: April 05, 2017</span>
                                     <a href="#">
                                         <h3>Fashion Week London</h3>
@@ -271,9 +271,9 @@
                                     </a>
                                 </div>
                             </article>
-                            <article class="support-page preview-page">
+                            <article class="support-page preview-page" role="article">
                                 <img src="img/blog/3.png" alt="">
-                                <div class="support-page__wrap">
+                                <div class="support-page__wrap" role="grid">
                                     <span><i class="far fa-clock"></i>Date: April 05, 2017</span>
                                     <a href="#">
                                         <h3>Fashion Show 2017</h3>
@@ -283,7 +283,7 @@
                                     </a>
                                 </div>
                             </article>
-                            <button class="view-all"><span>View All</span><i class="ion-md-arrow-round-forward"></i></button>
+                            <button class="view-all" role="button"><span>View All</span><i class="ion-md-arrow-round-forward"></i></button>
                         </section>
                         <!-- /.second-pages -->
                     </section>
@@ -293,19 +293,19 @@
             </section>
             <!-- /.blog -->
             <section class="brands">
-                <button class="brands-arrow brands-arrow__prev"><i class="icon ion-ios-arrow-back"></i></button>
+                <button class="brands-arrow brands-arrow__prev" role="button"><i class="icon ion-ios-arrow-back"></i></button>
                 <img src="img/brands/1.png" alt="">
                 <img src="img/brands/2.png" alt="">
                 <img src="img/brands/3.png" alt="">
                 <img src="img/brands/4.png" alt="">
-                <button class="brands-arrow brands-arrow__next"><i class="icon ion-ios-arrow-forward"></i></button>
+                <button class="brands-arrow brands-arrow__next" role="button"><i class="icon ion-ios-arrow-forward"></i></button>
             </section>
         </div>
         <!-- /.container-content -->
     </main>  
     <footer>
-        <div class="container">
-            <div class="footer-wrap">
+        <div class="container" role="grid">
+            <div class="footer-wrap" role="grid">
                 <div class="social">
                     <div class="footer__logo"><img src="img/footer/logo.png" alt=""></div>
                     <div class="social-networks">
@@ -326,7 +326,7 @@
                         <div><a href="#">Blog</a></div>
                     </nav>
                     <div class="subscribe">
-                        <form action="#" method="POST">
+                        <form action="#" method="POST" role="form">
                             <label for="subscribe_label">Subscribe to news</label>
                             <input type="email" name="email_subscribe" placeholder="Email Adrress" id="subscribe_label">
                             <input type="submit" value="Submit">

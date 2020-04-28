@@ -71,6 +71,10 @@ button {
   font-style: normal;
 }
 
+.container-content {
+  width: 1282px;
+}
+
 .container {
   margin: 0 auto;
   width: 1170px;
@@ -78,7 +82,6 @@ button {
 
 .container-content {
   margin: 0 auto;
-  width: 1282px;
 }
 
 .navbar-wrap {
@@ -1259,7 +1262,7 @@ footer {
 }
 
 .hero__arrows {
-  font-size: 60px;
+  font-size: 3.75rem;
   font-weight: 400;
   line-height: 57.2px;
   text-transform: uppercase;
@@ -1268,14 +1271,14 @@ footer {
 
 .hero__headline h1 {
   font-family: 'Playfair Display Regular', sans-serif;
-  font-size: 72px;
+  font-size: 4.5rem;
   font-weight: 700;
   line-height: 82px;
 }
 
 .hero-title button {
   font-family: 'Montserrat Semibold', sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
   line-height: 57.2px;
   text-transform: uppercase;
@@ -1283,57 +1286,57 @@ footer {
 
 .feature {
   font-family: 'Montserrat Semibold', sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
 }
 
 .feature small {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 300;
 }
 
 .offer p {
   font-family: 'Playfair Display Regular', sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
 }
 
 .offer span {
   font-family: 'Montserrat Semibold', sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
 }
 
 .more-offers p {
   font-family: 'Montserrat Semibold', sans-serif !important;
-  font-size: 17px;
+  font-size: 1.0625rem;
   font-weight: 400;
   text-transform: uppercase;
 }
 
 .more-offers a {
   font-family: 'Montserrat Semibold', sans-serif !important;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
 }
 
 .new-offer p {
   font-family: 'Montserrat Semibold', sans-serif !important;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
   letter-spacing: 2.8px;
 }
 
 .new-offer h3 {
   font-family: 'Playfair Display Regular', sans-serif;
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 700;
   line-height: 30px;
 }
 
 .new-offer button span {
-  font-size: 14px;
+  font-size: 0.875rem;
   text-transform: uppercase;
 }
 
@@ -1349,16 +1352,16 @@ footer {
 
 .sell-out:after, .new-offer:before {
   font-family: 'Montserrat Semibold', sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .load-more i {
   letter-spacing: 15px;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .load-more span {
-  font-size: 14px;
+  font-size: 0.875rem;
   text-transform: uppercase;
   font-family: 'Montserrat Bold', sans-serif;
   font-weight: 700;
@@ -1366,14 +1369,14 @@ footer {
 
 .slide__information p {
   font-family: 'Montserrat Semibold', sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 3.2px;
 }
 
 .slide__information a {
-  font-size: 36px;
+  font-size: 2.25rem;
 }
 
 .slide__information a h3 {
@@ -1384,14 +1387,14 @@ footer {
 
 .slide__information span {
   font-family: 'Montserrat Semibold', sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 18px;
 }
 
 .slick-dots li button:before {
   font-family: 'Playfair Display Regular', sans-serif;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 36px;
   letter-spacing: 12px;
@@ -1399,7 +1402,7 @@ footer {
 
 .products__banner p {
   font-family: 'Montserrat Semibold', sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 2.8px;
@@ -1407,21 +1410,21 @@ footer {
 
 .products__banner a h3 {
   font-family: 'Playfair Display Regular', sans-serif;
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 700;
   line-height: 36px;
 }
 
 .products__banner span {
   font-family: 'Montserrat Bold', sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .sell-out__banner p {
   font-family: 'Montserrat Semibold', sans-serif;
-  font-size: 12px;
+  font-size: 1.875rem;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 2.4px;
@@ -1429,7 +1432,7 @@ footer {
 
 .sell-out__banner a h1 {
   font-family: 'Playfair Display Regular', sans-serif;
-  font-size: 100px;
+  font-size: 6.25rem;
   font-weight: 400;
   line-height: 24px;
   text-transform: uppercase;
@@ -1437,7 +1440,7 @@ footer {
 
 .sell-out__banner a h3 {
   font-family: 'Playfair Display Regular', sans-serif;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 30px;
 }
@@ -1452,14 +1455,14 @@ footer {
 
 .preview-page span {
   font-family: 'Montserrat Semibold', sans-serif;
-  font-size: 10px;
+  font-size: 0.625rem;
   font-weight: 400;
   letter-spacing: 0.1px;
 }
 
 .preview-page a h3 {
   font-family: 'Playfair Display Regular', sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
   line-height: 24px;
 }
@@ -1478,36 +1481,36 @@ footer {
 
 .blog-preview__headline {
   font-family: 'Montserrat Bold', sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .blog-preview__headline .headline-arrows {
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 33px;
   letter-spacing: 0.14px;
 }
 
 .blog-preview__headline .headline-arrows i:before {
-  font-size: 35px;
+  font-size: 2.1875rem;
   letter-spacing: 0.14px;
 }
 
 .view-all {
   font-family: 'Montserrat Semibold', sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
   line-height: 24px;
   text-transform: uppercase;
 }
 
 .brands-arrow {
-  font-size: 35px;
+  font-size: 2.1875rem;
 }
 
 .social-networks {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 400;
   line-height: 30px;
   font-family: 'Montserrat Semibold', sans-serif;
@@ -1515,7 +1518,7 @@ footer {
 
 .footer-navbar {
   font-family: 'Montserrat Semibold', sans-serif;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.9px;
@@ -1523,7 +1526,7 @@ footer {
 
 .subscribe label {
   font-family: 'Montserrat Semibold', sans-serif;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.9px;
@@ -1531,14 +1534,14 @@ footer {
 
 .subscribe input {
   font-family: 'Montserrat Semibold', sans-serif;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 400;
   line-height: 24px;
 }
 
 .contacts h3 {
   font-family: 'Montserrat Semibold', sans-serif;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.9px;
@@ -1546,7 +1549,7 @@ footer {
 
 .contacts span {
   font-family: 'Montserrat Semibold', sans-serif;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 400;
   line-height: 18px;
 }
