@@ -21,7 +21,8 @@ export default {
             this.$store.state.cards.push({id: this.$store.state.count,
             status: 'plan', 
             description: this.description,
-            date: "", 
+            date: "",
+            date_end:"", 
             name: ""});
             event.preventDefault();
             this.description="";

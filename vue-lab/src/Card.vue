@@ -15,15 +15,21 @@
 </template>
 
 <script>
+import moment from 'moment'
+import humanizeDuration from 'humanize-duration'
 export default {
     props:['number','description','date','name','status'],
     methods:{
         nextStage: function(e){
             if(this.status=='plan'){
                 this.$store.state.cards[this.number-1].status='progress';
-                this.$store.state.cards[this.number-1].date=new Date();
+                this.$store.state.cards[this.number-1].date=moment().format('DD.MM.YYYY HH:mm:ss');
             }else if(this.status=='progress'){
+                let a = moment(this.$store.state.cards[this.number-1].date, 'DD.MM.YYYY HH:mm:ss'); 
+                let b = moment();
+                let c =b.diff(a, 'milliseconds');
                 this.$store.state.cards[this.number-1].status='done';
+                this.$store.state.cards[this.number-1].date_end=humanizeDuration(c, {  round : true, language: 'ru' });
             }else{
                 this.$store.state.cards[this.number-1].status='end'
             }

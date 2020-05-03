@@ -3,6 +3,7 @@ import 'es6-promise/auto'
 import Vuex from 'vuex'
 import App from './App.vue'
 import ToggleButton from 'vue-js-toggle-button'
+
 Vue.use(ToggleButton)
 Vue.use(Vuex)
 const store = new Vuex.Store({
