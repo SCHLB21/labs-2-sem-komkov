@@ -1,5 +1,5 @@
 {
-  "name": "vue1",
+  "name": "vue-lab",
   "description": "A Vue.js project",
   "version": "1.0.0",
   "author": "Dmitriy <dmitryweazy@gmail.com>",
@@ -12,7 +12,6 @@
   "dependencies": {
     "es6-promise": "^4.2.8",
     "vue": "^2.5.11",
-    "vue-js-toggle-button": "^1.3.3",
     "vuex": "^3.3.0"
   },
   "browserslist": [
@@ -33,7 +32,6 @@
     "vue-loader": "^13.0.5",
     "vue-template-compiler": "^2.4.4",
     "webpack": "^3.6.0",
-    "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.1.11"
+    "webpack-dev-server": "^2.9.1"
   }
 }
