@@ -7,7 +7,9 @@ Vue.use(ToggleButton)
 Vue.use(Vuex)
 const store = new Vuex.Store({
   state: {
-    count: 0
+    count: -1,
+    cards: [],
+    name: 'Dima'
   },
   mutations: {
     increment (state) {
@@ -17,5 +19,6 @@ const store = new Vuex.Store({
 })
 new Vue({
   el: '#app',
+  store: store,
   render: h => h(App)
 })

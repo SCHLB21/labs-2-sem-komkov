@@ -17,6 +17,12 @@ export default {
     },
     methods: {
         createCard: function(event){
+            this.$store.commit('increment');
+            this.$store.state.cards.push({id: this.$store.state.count,
+            status: 'plan', 
+            description: this.description,
+            date: "", 
+            name: ""});
             event.preventDefault();
             this.description="";
         }
