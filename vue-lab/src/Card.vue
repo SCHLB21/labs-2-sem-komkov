@@ -21,6 +21,7 @@ export default {
         nextStage: function(e){
             if(this.status=='plan'){
                 this.$store.state.cards[this.number-1].status='progress';
+                this.$store.state.cards[this.number-1].date=new Date();
             }else if(this.status=='progress'){
                 this.$store.state.cards[this.number-1].status='done';
             }else{
