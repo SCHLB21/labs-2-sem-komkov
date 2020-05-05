@@ -1,5 +1,14 @@
 <template>
   <div>
+    <div class="modal-name__bg">
+      <div class="modal-name__window">
+        <span>Имя</span>
+        <div class="modal-name__field">
+            <input type="text" placeholder="Введите имя">
+            <button><i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
     <header>
         <div class="header-wrap container">
             <div class="header__logo">

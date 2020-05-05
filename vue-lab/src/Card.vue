@@ -1,10 +1,12 @@
 <template>
-<article class="work-card" v-if="$store.state.cards.length!=0">
+<article class="work-card" :data_id="number-1" v-if="$store.state.cards.length!=0">
     <h3>Задача №{{number}}</h3>
     <p>{{description}}</p>
     <span v-if="date!=''">Дата и время начала</span>
     <p>{{date}}</p>
-    <span v-if="name!=''">Ответственный</span>
+    <span v-if="status=='done'">Ушло времени</span>
+    <p>{{end}}</p>
+    <span v-if="status!='plan'">Ответственный</span>
     <p>{{name}}</p>
     <div class="control-buttons">
         <i class="far fa-edit"></i>
@@ -18,7 +20,7 @@
 import moment from 'moment'
 import humanizeDuration from 'humanize-duration'
 export default {
-    props:['number','description','date','name','status'],
+    props:['number','description','date','name','status','end'],
     methods:{
         nextStage: function(e){
             if(this.status=='plan'){
@@ -29,7 +31,7 @@ export default {
                 let b = moment();
                 let c =b.diff(a, 'milliseconds');
                 this.$store.state.cards[this.number-1].status='done';
-                this.$store.state.cards[this.number-1].date_end=humanizeDuration(c, {  round : true, language: 'ru' });
+                this.$store.state.cards[this.number-1].date_end=humanizeDuration(c, {  round : true, language: 'ru', units: ['d', 'h','m'] });
             }else{
                 this.$store.state.cards[this.number-1].status='end'
             }

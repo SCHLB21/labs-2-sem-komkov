@@ -10,6 +10,15 @@ const store = new Vuex.Store({
   state: {
     count: -1,
     cards: [],
+    edit: {
+      state: false,
+      id: '',
+      description: '',
+      date: '',
+      date_end: '',
+      name: '',
+      status: ''
+    },
     name: 'Dima'
   },
   mutations: {

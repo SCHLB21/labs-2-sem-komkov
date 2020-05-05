@@ -1,0 +1,65 @@
+.modal-name
+    &__bg 
+        margin: 0
+        padding: 0
+        position: fixed
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        background: rgba(255, 255, 255, 0.6)
+        display: flex
+        justify-content: center
+        align-items: center
+    &__window 
+        display: flex
+        flex-direction: column
+        align-items: center
+        border: 2px solid #7FC4FD
+        border-radius: 10px
+        background-color: #fff
+        width: 700px
+        padding-top: 80px
+        padding-bottom: 80px
+        padding-left: 195px
+        padding-right: 195px
+        span 
+            font-size: 13px
+            font-weight: 700
+            color: #42AFFC
+            user-select: none
+            align-self: flex-start
+    &__field
+        margin-top: 5px
+        display: flex
+        flex-direction: column
+        align-items: center
+        input
+            width: 310px
+            height: 45px
+            border: 2px solid #B7DEFD
+            border-radius: 10px
+            background: #F1F9FF
+            outline: none
+            padding-left: 16px
+            &:focus 
+                background: #FFF
+                &::placeholder
+                    color: transparent
+            &::placeholder
+                color: #2DA5FC
+                font-size: 12px
+        button 
+            margin-top: 35px
+            text-align: center
+            width: 300px   
+            height: 45px
+            border: none
+            border-radius: 5px
+            background: #2699FB
+            padding: 0
+            color: #fff
+            font-size: 18px
+            outline: none
+            cursor: pointer
+            
