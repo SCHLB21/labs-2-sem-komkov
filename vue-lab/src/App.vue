@@ -36,7 +36,6 @@
     },
     methods:{
       changeTheme: function(e){
-        console.log(this.theme)
         this.$store.state.theme=this.theme
         this.$store.state.dark=""
         this.$store.state.dark_card=""

@@ -1,6 +1,7 @@
 <template>
   <div class="modal-edit__bg" v-if="$store.state.edit.state">
         <div class="modal-edit__window" :class="$store.state.dark">
+          <i class="fas fa-times-circle close" v-on:click="closeModal($event);"></i>
           <div class="modal-edit__description">
             <span>Описание</span>
             <input v-model="description" type="text" placeholder="Описание">
@@ -66,8 +67,17 @@ export default {
       this.name=''; 
       this.date='';
       this.date_end='';
+    },
+    closeModal: function(e){
+      this.$store.state.edit.state=false;
+      e.preventDefault();
+      this.status=''; 
+      this.description=''; 
+      this.name=''; 
+      this.date='';
+      this.date_end='';
     }
-  }
+  },
 }
 </script>
 
