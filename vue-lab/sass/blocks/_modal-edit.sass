@@ -1,0 +1,86 @@
+.modal-edit
+    &__bg 
+        margin: 0
+        padding: 0
+        position: fixed
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        background: rgba(255, 255, 255, 0.6)
+        display: flex
+        justify-content: center
+        align-items: center
+    &__window 
+        border: 2px solid #7FC4FD
+        border-radius: 10px
+        background-color: #fff
+        width: 700px
+        padding-top: 85px
+        padding-bottom: 85px
+        padding-left: 195px
+        padding-right: 195px
+        display: flex
+        flex-direction: column
+        &>*
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            span 
+                font-size: 13px
+                font-weight: 700
+                color: #42AFFC
+                user-select: none
+                align-self: flex-start
+                margin-top: 30px
+
+            select 
+                width: 310px
+                height: 45px
+                border: 2px solid #B7DEFD
+                border-radius: 10px
+                background: #F1F9FF
+                outline: none
+                padding-left: 16px
+                margin-top: 6px
+                color: #2DA5FC
+                font-size: 12px
+                >option 
+                    color: #2DA5FC
+                    font-size: 12px
+            input
+                width: 310px
+                height: 45px
+                border: 2px solid #B7DEFD
+                border-radius: 10px
+                background: #F1F9FF
+                outline: none
+                padding-left: 16px
+                margin-top: 6px
+                &:focus 
+                    background: #FFF
+                    &::placeholder
+                        color: transparent
+                &::placeholder
+                    color: #2DA5FC
+                    font-size: 12px
+        button 
+            align-self: center
+            display: flex
+            justify-content: center 
+            align-items: center
+            margin-top: 45px
+            width: 280px   
+            height: 45px
+            border: none
+            border-radius: 5px
+            background: #2699FB
+            padding: 0
+            color: #fff
+            font-size: 18px
+            outline: none
+            cursor: pointer
+    &__description
+        span 
+            margin-top: 0         
+            

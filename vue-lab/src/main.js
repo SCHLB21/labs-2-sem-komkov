@@ -8,8 +8,11 @@ Vue.use(ToggleButton)
 Vue.use(Vuex)
 const store = new Vuex.Store({
   state: {
+    theme: false,
     count: -1,
     cards: [],
+    dark: '',
+    dark_card: '',
     edit: {
       state: false,
       id: '',

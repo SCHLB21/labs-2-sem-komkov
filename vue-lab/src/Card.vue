@@ -1,5 +1,5 @@
 <template>
-<article class="work-card" :data_id="number-1" v-if="$store.state.cards.length!=0">
+<article class="work-card" :class="$store.state.dark_card" :data_id="number-1" v-if="$store.state.cards.length!=0">
     <h3>Задача №{{number}}</h3>
     <p>{{description}}</p>
     <span v-if="date!=''">Дата и время начала</span>
