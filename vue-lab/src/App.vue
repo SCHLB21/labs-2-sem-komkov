@@ -1,6 +1,5 @@
 <template>
   <div :class="dark">
-    <modal-name></modal-name>
     <header>
         <div class="header-wrap container">
             <div class="header__logo">
@@ -18,6 +17,7 @@
         <add-card></add-card>
         <work-board></work-board>
       </main>
+      <modal-name></modal-name>
       <modal-edit></modal-edit>
   </div>
 </template>

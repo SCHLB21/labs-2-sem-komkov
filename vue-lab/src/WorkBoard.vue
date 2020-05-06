@@ -24,7 +24,7 @@
                         v-bind:number="card.id+1"
                         v-bind:description="card.description"
                         v-bind:date="card.date"
-                        v-bind:name="name"
+                        v-bind:name="card.name"
                         v-bind:status="card.status"></task-card>
                     </draggable>
                 </div>
@@ -39,7 +39,7 @@
                         v-bind:number="card.id+1"
                         v-bind:description="card.description"
                         v-bind:date="card.date"
-                        v-bind:name="name"
+                        v-bind:name="card.name"
                         v-bind:status="card.status"
                         v-bind:end="card.date_end"></task-card>
                     </draggable>
@@ -119,9 +119,6 @@ export default {
     computed: {
         cards() {
             return this.$store.state.cards
-        },
-        cards1() {
-            return this.$store.state.cards1
         },
         name() {
             return this.$store.state.name

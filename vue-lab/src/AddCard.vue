@@ -23,7 +23,7 @@ export default {
             description: this.description,
             date: "",
             date_end:"", 
-            name: ""});
+            name: this.$store.state.name});
             event.preventDefault();
             this.description="";
         }
