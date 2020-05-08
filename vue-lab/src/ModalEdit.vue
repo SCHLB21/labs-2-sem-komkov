@@ -9,7 +9,6 @@
           <div class="modal-edit__status">
             <span>Статус</span>
             <select v-model="status" name="status">
-                <option disabled value="">Укажите статус</option>
                 <option value="plan">План</option>
                 <option value="progress">В работе</option>
                 <option value="done">Готово</option>
@@ -38,14 +37,10 @@ import humanizeDuration from 'humanize-duration'
 export default {
   data(){
       return{
-          status: '',
-          description: '',
-          name: '',
-          date: '',
-          date_end: ''
-
+        
       }
   },
+  props:['description','date','name','status','date_end'],
   methods: {
     sendChanges: function(e){
       let a = moment(this.date, 'DD.MM.YYYY HH:mm:ss'); 
@@ -77,7 +72,7 @@ export default {
       this.date='';
       this.date_end='';
     }
-  },
+  }
 }
 </script>
 

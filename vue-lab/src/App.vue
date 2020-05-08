@@ -18,7 +18,13 @@
         <work-board></work-board>
       </main>
       <modal-name></modal-name>
-      <modal-edit></modal-edit>
+      <modal-edit
+      v-bind:description="description"
+      v-bind:date="date"
+      v-bind:name="name"
+      v-bind:status="status"
+      v-bind:date_end="date_end"
+      ></modal-edit>
   </div>
 </template>
 <script>
@@ -45,6 +51,23 @@
           this.$store.state.dark="dark"
           this.$store.state.dark_card="work-card__dark"
         }
+      }
+    },
+    computed:{
+      description(){
+        return this.$store.state.edit.description
+      },
+      date(){
+        return this.$store.state.edit.date
+      },
+      name(){
+        return this.$store.state.edit.name
+      },
+      status(){
+        return this.$store.state.edit.status
+      },
+      date_end(){
+        return this.$store.state.edit.date_end
       }
     },
     components: {
